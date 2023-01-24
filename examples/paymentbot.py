@@ -36,7 +36,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PAYMENT_PROVIDER_TOKEN = "PAYMENT_PROVIDER_TOKEN"
+PAYMENT_PROVIDER_TOKEN = "284685063:TEST:YzE5NDExMjZhZGU2"
 
 
 async def start_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -144,7 +144,7 @@ async def successful_payment_callback(update: Update, context: ContextTypes.DEFA
 def main() -> None:
     """Run the bot."""
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("TOKEN").build()
+    application = Application.builder().token('5784328384:AAHpskgFK1zD8b_uhUMi2ji44fjRji3v7FY').build()
 
     # simple start function
     application.add_handler(CommandHandler("start", start_callback))
